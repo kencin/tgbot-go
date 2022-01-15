@@ -1,0 +1,16 @@
+name: tgbog
+
+log:
+  level: debug
+  fileLogPath: /var/logpath # 日志输出地点
+  out: file # file|stdout # 输出到文件还是标准输出
+  showCaller: true  # 日志中是否输出调用者
+
+bottoken:
+  fileBotToken: "token" # fileBot的token，在botFather上获取
+
+store:
+  filePath: /mnt/storepath  # 最终视频文件存储点
+
+selfapiserver:
+  apiEndpoint: "http://127.0.0.1:8081/bot%s/%s"
